@@ -1,0 +1,58 @@
+<!--Primeiro exercicio do Livro Use a Cabeça jQuery - Alta Books-->
+
+<!DOCTYPE html>
+
+<html>
+
+<head><title>jQuery 01</title>
+
+<style>
+
+#change-me{
+	position: absolute;
+	top: 100px;
+	left: 400px;
+	font: 24px arial; 
+}
+
+#move-up, #move-down, #color, #disappear{
+	padding: 5px;
+}
+</style>
+<script src="jquery.min.js"></script>
+</head>
+
+<body>
+
+	<button id="move-up">MOVE UP</button>
+	<button id="move-down">MOVE DOWN</button>
+	<button id="color">COLOR</button>
+	<button id="disappear">DISAPPEAR/REAPPEAR</button>
+
+	<div id="change-me">
+		MAKE ME DOWN STUFF
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$("#move-up").click(function(){
+				$("#change-me").animate({top:30},200)
+			})
+
+			$("#move-down").click(function(){
+				$("#change-me").animate({top:500},2000)
+			})
+
+			$("#color").click(function(){
+				$("#change-me").css("color","purple")
+			})
+
+			$("#disappear").click(function(){
+				$("#change-me").toggle("slow");
+			})
+
+		})
+	</script>
+</body>
+
+</html>
