@@ -2,33 +2,35 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="pt-br">
 
-<head><title>Exe01 01</title>
+<head>
+	<title>Exe01 01</title>
+	
+	<style>
+		#change-me{
+			position: absolute;
+			top: 100px;
+			left: 400px;
+			font: 24px arial; 
+		}
+		
+		#move-up, #move-down, #color, #disappear{
+			padding: 5px;
+		}
+	</style>
+	
+	<script src="jquery.min.js"></script>
 
-<style>
-
-#change-me{
-	position: absolute;
-	top: 100px;
-	left: 400px;
-	font: 24px arial; 
-}
-
-#move-up, #move-down, #color, #disappear{
-	padding: 5px;
-}
-</style>
-<script src="jquery.min.js"></script>
+	
 </head>
 
 <body>
-
 	<button id="move-up">MOVE UP</button>
 	<button id="move-down">MOVE DOWN</button>
 	<button id="color">COLOR</button>
 	<button id="disappear">DISAPPEAR/REAPPEAR</button>
-
+	
 	<div id="change-me">
 		MAKE ME DOWN STUFF
 	</div>
@@ -54,6 +56,4 @@
 		})
 	</script>
 </body>
-
-
 </html>
